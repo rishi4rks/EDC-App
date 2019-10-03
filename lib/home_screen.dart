@@ -14,7 +14,10 @@ class BaseApp extends StatelessWidget {
         onPressed: () {},
       ),
       appBar: AppBar(
-          centerTitle: true, backgroundColor: barColor, title: Text("EDC")),
+          automaticallyImplyLeading: false,
+          centerTitle: true,
+          backgroundColor: barColor,
+          title: Text("EDC")),
       body: Container(
         alignment: Alignment.center,
         padding: EdgeInsets.all(5.0),
@@ -36,47 +39,48 @@ class BaseApp extends StatelessWidget {
                   fontSize: 25.0),
             ),
             Container(
-              color: cardColor,
+                color: cardColor,
                 child: Column(
-              children: <Widget>[
-                Container(
-                  child: Column(
-                    children: <Widget>[
-                      Container(
-                        alignment: Alignment.topCenter,
-                        constraints: BoxConstraints.expand(
-                          height:
-                              Theme.of(context).textTheme.display1.fontSize *
+                  children: <Widget>[
+                    Container(
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            alignment: Alignment.topCenter,
+                            constraints: BoxConstraints.expand(
+                              height: Theme.of(context)
+                                          .textTheme
+                                          .display1
+                                          .fontSize *
                                       1.1 +
                                   200.0,
-                        ),
-                        
-                        child: Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Text(
-                            "ABOUT US",
-                            style: Theme.of(context)
-                                .textTheme
-                                .display1
-                                .copyWith(color: Colors.black),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(10.0),
+                              child: Text(
+                                "ABOUT US",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .display1
+                                    .copyWith(color: Colors.black),
+                              ),
+                            ),
                           ),
-                        ),
+                          Padding(
+                            padding: EdgeInsets.all(10.0),
+                            child: Text(
+                              "The Entrepreneurship Development Cell is a well-established student organization which was formed with the intention to enhance and encourage the entrepreneurial spirit among the young students. Our aim is to create more job providers rather than job seekers.",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 16.0),
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Text(
-                          "The Entrepreneurship Development Cell is a well-established student organization which was formed with the intention to enhance and encourage the entrepreneurial spirit among the young students. Our aim is to create more job providers rather than job seekers.",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 16.0),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            )),
+                    )
+                  ],
+                )),
           ],
         ),
       ),
