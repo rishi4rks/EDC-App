@@ -13,6 +13,7 @@ class BaseApp extends StatelessWidget {
         child: Icon(Icons.event, color: bgColor),
         onPressed: () {},
       ),
+      
       appBar: AppBar(
           automaticallyImplyLeading: false,
           centerTitle: true,
