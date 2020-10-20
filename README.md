@@ -1,6 +1,6 @@
 # App for Entrepreneurship Development Cell
 
-A new Flutter project.
+A new Flutter project for event management and registration of participants.
 
 ## Getting Started
 
